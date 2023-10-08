@@ -111,5 +111,5 @@ export { Loader, loaderVariants }
 Untuk menggunakan CVA pada proyek Next.js, kita dapat menggunakan template yang sudah disediakan oleh `shadcn/next-template`. Template ini sudah dilengkapi dengan konfigurasi Tailwind CSS dan CVA. Berikut cara menggunakan template tersebut:
 
 ```bash
-npx create-next-app -e https://github.com/shadcn/next-template
+pnpm create-next-app -e https://github.com/shadcn/next-template
 ```
