@@ -100,6 +100,8 @@ export { Loader, loaderVariants }
 
 ```
 
+[Preview nya ada disini](https://cva-introduction.vercel.app/preview)
+
 Untuk menggunakan CVA pada proyek Next.js, kita dapat menggunakan template yang sudah disediakan oleh `shadcn/next-template`. Template ini sudah dilengkapi dengan konfigurasi Tailwind CSS dan CVA. Berikut cara menggunakan template tersebut:
 
 ```bash
