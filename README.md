@@ -29,7 +29,7 @@ Cara menggunakan CVA pada Tailwind CSS adalah sebagai berikut:
 
 ## Let's code with CVA!
 
-Berikut contoh penggunaan CVA pada file HTML:
+Berikut contoh penggunaan CVA pada React/Next.js:
 
 ```javascript
 import React from "react"
