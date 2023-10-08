@@ -21,15 +21,7 @@ maap malah kena infinite loop gue awkaowkoawk
 
 ## Gimana cara pake nya?
 
-Cara menggunakan CVA pada Tailwind CSS adalah sebagai berikut:
-
-1. Buat file konfigurasi Tailwind CSS menggunakan perintah `npx tailwindcss init`
-2. Tambahkan konfigurasi CVA pada file konfigurasi Tailwind CSS
-3. Gunakan class-class yang sudah diatur dengan CVA pada elemen HTML yang ingin di-styling
-
-## Let's code with CVA!
-
-Berikut contoh penggunaan CVA pada React/Next.js:
+Gini contoh singkat penggunaan CVA pada React/Next.js:
 
 ```javascript
 import React from "react"
