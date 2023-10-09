@@ -18,7 +18,7 @@ export default function PreviewPage() {
       )}
     >
       <h1 className="text-xl font-bold">Loader with CVA Preview</h1>
-      <div className="grid grid-cols-4 gap-6">{renderLoader()}</div>
+      <div className="grid w-max grid-cols-4 gap-6">{renderLoader()}</div>
     </div>
   )
 }

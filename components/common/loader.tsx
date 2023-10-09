@@ -4,7 +4,7 @@ import { Loader as Buffer, Loader2 as Circle, PenToolIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
-const loaderVariants = cva("", {
+const loaderVariants = cva("mx-auto", {
   variants: {
     variant: {
       default: "text-primary dark:text-white",
@@ -13,9 +13,9 @@ const loaderVariants = cva("", {
       ghost: "text-accen dark:text-primary-foreground",
     },
     size: {
-      default: "h-10 w-10",
-      sm: "h-9 w-9",
-      lg: "h-11 w-11",
+      default: "h-12 w-12",
+      sm: "h-8 w-8",
+      lg: "h-14 w-14",
     },
   },
   defaultVariants: {
