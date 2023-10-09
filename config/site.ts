@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "CVA & SHADCN-UI",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "an introduction to CVA & SHADCN-UI, a modern design system for building fast websites.",
   mainNav: [
     {
       title: "Home",
@@ -12,7 +12,7 @@ export const siteConfig = {
   ],
   links: {
     twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
+    github: "https://github.com/shewaslatte/cva-introduction",
     docs: "https://ui.shadcn.com",
   },
 }

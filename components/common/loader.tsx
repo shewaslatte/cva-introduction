@@ -26,11 +26,15 @@ const loaderVariants = cva("", {
 export interface LoaderVariants
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof loaderVariants> {
-  type?: "buffer" | "circle" | "penis"
+  type?: "buffer" | "circle" | "pen-loader"
 }
 
 const Loader = React.forwardRef<HTMLDivElement, LoaderVariants>(
   ({ className, variant, size, type = "buffer", ...props }, ref) => {
+    const typeNotFound = !["buffer", "circle", "pen-loader"].includes(type)
+
+    if (typeNotFound) throw new Error("Loader type not found")
+
     return (
       <>
         {type === "buffer" && (
@@ -53,7 +57,7 @@ const Loader = React.forwardRef<HTMLDivElement, LoaderVariants>(
             {...props}
           />
         )}
-        {type === "penis" && (
+        {type === "pen-loader" && (
           <PenToolIcon
             className={cn(
               loaderVariants({ variant, size, className }),
@@ -70,4 +74,9 @@ const Loader = React.forwardRef<HTMLDivElement, LoaderVariants>(
 
 Loader.displayName = "Loader"
 
+type LoaderSize = "default" | "sm" | "lg"
+type LoaderType = "buffer" | "circle" | "pen-loader"
+type LoaderVariant = "default" | "destructive" | "secondary" | "ghost"
+
 export { Loader, loaderVariants }
+export type { LoaderSize, LoaderType, LoaderVariant }

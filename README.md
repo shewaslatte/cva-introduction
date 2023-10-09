@@ -52,7 +52,7 @@ const loaderVariants = cva("", {
 export interface LoaderVariants
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof loaderVariants> {
-  type?: "buffer" | "circle" | "penis"
+  type?: "buffer" | "circle" | "pen-loader"
 }
 
 const Loader = React.forwardRef<HTMLDivElement, LoaderVariants>(
@@ -79,7 +79,7 @@ const Loader = React.forwardRef<HTMLDivElement, LoaderVariants>(
             {...props}
           />
         )}
-        {type === "penis" && (
+        {type === "pen-loader" && (
           <PenToolIcon
             className={cn(
               loaderVariants({ variant, size, className }),
